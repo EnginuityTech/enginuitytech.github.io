@@ -1,0 +1,35 @@
+inside middle div
+<div id="barOne"></div>
+
+style
+#barOne{
+  position:relative;
+  width: 10px;
+  height: 60px;
+  color: white;
+  rotate:180deg;
+  transition: rotate 1.5s;
+}
+#barOne.is-inViewport{
+  rotate:360deg;
+}
+
+left animate
+#[elem]{
+  position:relative;
+  left:100px;
+  transition: left 1s;
+}
+#[elem].is-inViewport{
+  left:-20px;
+}
+
+right
+#[elem]{
+  position:relative;
+  left:-100px;
+  transition: left 1s;
+}
+#[elem].is-inViewport{
+  left:20px;
+}
