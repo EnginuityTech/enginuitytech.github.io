@@ -1,0 +1,22 @@
+#navbarhome{
+	z-index:2;background-color:
+	rgb(0, 0, 40, 0.75);
+	padding:0.75rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+.nav-link {
+	font-family: "Montserrat", sans-serif;
+}
+.navbar-brand {
+	font-family: "Montserrat", sans-serif;
+}
+.dropdown-menu{
+	background-color:rgba(0,0,39,0.7);
+}
+.dropdown-item.special-hover {
+	color:#6F6F85
+}
+.dropdown-header.pl-3{
+	color:#a6a6bd
+}
