@@ -1,16 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title></title>
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-  </head>
-  <body>
-    <font style="font-family: 'Cabin';">
-      HI
-    </font>
-    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-    <script>
-      
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <script>
+    tailwind.config = {
+      theme: {
+        
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="absolute -z-10 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center" style="height:120vh; background-image:url('./images/banner.jpg')">
+  <!--header-->
+  <div class="relative full-column max-w-full mx-auto py-64 bg-center bg-cover bg-scroll text-center"> <!--bg-gradient-to-tr from-blue-900 to-sky-700-->
+    <div class="z-10 relative py-10 max-w-2xl mx-auto rounded-2xl shadow-2xl text-center text-white bg-white"> <!--bg-gradient-to-br from-purple-500 to-pink-500-->
+      <div class="bg-clip-text py-6 text-transparent bg-gradient-to-r h-full from-pink-500 to-violet-500">
+        <p class="font-bold text-8xl">Hippo Hack</p>
+      </div>
+    </div>
+  </div>
+  <!--body p1-->
+  <div class="relative z-0 bg-gradient-to-br from-blue-700 to-sky-500" style="height:120vh;font-family: 'Merriweather';">
+    <h1 class="relative pt-64 text-center text-6xl text-white">What exactly is a <b><u>Hackathon</u></b>?</h1>
+    <p class="relative pt-4 w-5/6 text-right text-white text-sm">Don't worry, we are not actually hacking in the sense of the word "hacking!"</p>
+    <p class="relative text-xl text-white text-center pt-32 w-2/3 max-w-full mx-auto">A hackathon is a place for creators to form a team and work on a project relating to computer science and other fields of STEAM. These projects will be shared with everyone and we will all have an opportunity to appreciate the hard work and creativity put into these amazing projects.</p>
+  </div>
+  <!--story-->
+  <div class="relative z-0" style="height:140vh;">
+    <!--first panel-->
+    <div class="relative z-10 w-full h-1/2 bg-cover bg-center" style="background-image:url('./images/sad-hippo.jpg')">
+      <div class="absolute z-20 w-full h-full bg-center bg-gradient-to-r from-transparent to-black opacity-80 to-80%"></div>
+      <div class="flex flex-col justify-center relative z-30 w-1/2 h-full left-1/2 items-center text-white my-auto">
+        <p class="w-7/12 text-center rounded-lg text-lg"><b>Henry the hippo needs your help! He was last seen sobbing as he trudged away from his former habitat (destroyed by humans ofc).</b></p>
+      </div>
+    </div>
+    <!--second panel-->
+    <div class="relative z-10 w-full h-1/2 bg-cover bg-center" style="background-image:url('./images/henrychris.jpg');">
+      <div class="absolute z-20 w-full h-full bg-center bg-gradient-to-l from-transparent to-black opacity-80 to-80%"></div>
+      <div class="flex flex-col justify-center relative z-30 w-1/2 h-full items-center text-white my-auto">
+        <p class="w-7/12 text-center rounded-lg text-lg"><b>After talking to Chris the crocodile, he has come to the revelation that he needs you (yes you!) to help him accomplish his aspirations to better him and his species!</b></p>
+      </div>
+    </div>
+  </div>
+  <!--the what-->
+  <div class="relative z-0 h-2/3 pt-32 flex flex-row justify-center items-end" style="background-color:#095972;font-family: 'Merriweather';">
+    <div class="flex flex-row justify-end items-center w-1/2 mt-auto mb-auto">
+      <img src="./images/img1.png">
+    </div>
+    <div class="flex flex-col w-1/2 mt-auto mb-auto text-left ml-8">
+      <h1 class="w-full text-white text-8xl mb-8"><b><u>The What</u></b></h1>
+      <p class="w-10/12 text-white text-xl">Hippo Hack is a 12 hour hackathon held in July where programmers of all experience levels across the Greater Boston area will congregate for a day full of collaboration, teamwork and fun!
+      </p>
+    </div>
+  </div>
+  <!--the how-->
+  <div class="relative z-0 h-2/3 pb-32 flex flex-row justify-center items-center" style="background-color:#095972;font-family: 'Merriweather';">
+    <div class="flex flex-col items-end w-1/2 mt-auto mb-auto text-right mr-8">
+      <h1 class="w-full text-white text-8xl mb-8"><b><u>The How</u></b></h1>
+      <p class="w-10/12 text-white text-xl">Teams will choose a theme from a pre- determined list of themes/topics, and by the end of the hacking time, the judging phase will begin and winners will be determined. Prizes will not only be awarded for the best overall projects, but also to beginners that display remarkable progress.
+      </p>
+    </div>
+    <div class="flex flex-row justify-start items-center w-1/2 mt-auto mb-auto">
+      <img src="./images/img2.png">
+    </div>
+  </div>
+
+  <!-- register -->
+  <div class="relative h-screen -z-10 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center flex flex-col justify-center items-center text-white" style="background-image:url('./images/epochNewDelhi1.jpg');font-family: 'Merriweather';">
+    <h1 class="text-8xl">Register <a class="text-sky-500" href="">here</a>!!!</h1>
+    <p class="text-3xl mt-4">Reuben Hoar Public Library, Littleton MA</p>
+    <p class="text-3xl mt-1">Monday, August 28th  |  9:00am - 8:30 PM</p>
+    <p class="text-xl mt-16">If you currently don't know whether you have time to attend, <a class="text-sky-500" href="">join our email list</a>!</p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="relative flex flex-col justify-start items-center h-auto" style="font-family: 'Merriweather';">
+    <!--left question-->
+    <h1 class="relative text-center text-6xl pt-16">FAQ</h1>
+    <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
+    <div class="relative z-10 w-2/3">
+      <h1 class="relative text-left text-2xl pb-4">I have ZERO programming experience. Should I come?</h1>
+      <p class="relative text-left text-md">OF COURSE! In fact, judging criteria will consider experience for those who don't have a leg up. We will run a number of introductory classes during the day if you are just starting out!</p>
+    </div>
+    <!--right question-->
+    <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
+    <div class="relative z-10 w-2/3">
+      <h1 class="relative text-right text-2xl pb-4">How much does it cost?</h1>
+      <p class="relative text-right text-md">It's completely free! Participants will receive complimentary merchandise, food, and more!</p>
+    </div>
+    <!--left question-->
+    <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
+    <div class="relative z-10 w-2/3">
+      <h1 class="relative text-left text-2xl pb-4">How many people can be in a group?</h1>
+      <p class="relative text-left text-md">3-5 people can be in a group. You can also work in smaller groups or even solo. If you need a group, we can help you find one to work in!</p>
+    </div>
+    <!--right question-->
+    <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
+    <div class="relative z-10 w-2/3">
+      <h1 class="relative text-right text-2xl pb-4">What should I bring?</h1>
+      <p class="relative text-right text-md">Bring your computer and a charger as well as anything else, including other tech-related gear you may want, so that you can work as productively as you can. However, we will be bringing spare gear and we will be able to loan out Chromebooks if you don't own a computer or you forget to bring yours :)</p>
+    </div>
+    <!--left question-->
+    <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
+    <div class="relative z-10 w-2/3">
+      <h1 class="relative text-left text-2xl pb-4">What age do I have to be in order to participate?</h1>
+      <p class="relative text-left text-md">Hippo Hack is for all grades 6-12!</p>
+    </div>
+    <!--some margin white space-->
+    <div class="relative z-10 w-full py-8"></div>
+  </div>
+
+  <!--gcalendar gmap embeds-->
+  <div class="relative h-screen flex flex-row justify-center items-center text-white" style="background-color:#095972; font-family: 'Merriweather';">
+    <div class="relative flex flex-col justify-center items-center">
+      <h1 class="relative text-center text-6xl mb-8">Calendar of events</h1>
+      <!--embed cal-->
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showPrint=0&showTabs=0&showCalendars=0&showTz=1&mode=AGENDA&src=MTM0OGNkYTRjNDNlOWQyMTIzMGQ0YWY3OWI3MDhhZDVlODkxZjEwODA1Mjc5NjgxYzA2MDRkMjI1NDliYzRiMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB" style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+      <p class="text-lg mt-4">Add our calendar at <a class="text-sky-500" href="">this link</a>!</p>
+    </div>
+    <div class="relative flex flex-col justify-center items-center">
+      <h1 class="relative text-center text-6xl mb-8">Location</h1>
+      <!--embed map-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.578402858767!2d-71.48361982429768!3d42.54300972352426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e395d6636ed17b%3A0x774ba1db0744a64!2sReuben%20Hoar%20Public%20Library!5e0!3m2!1sen!2sus!4v1691781638548!5m2!1sen!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p class="text-lg mt-4">Reuben Hoar Public Library - 35 Shattuck St, Littleton MA 01460</p>
+    </div>
+  </div>
+  <!--et about us-->
+  <div class="relative h-3/4 flex flex-row justify-center items-center" style="font-family: 'Merriweather';">
+    <div class="flex flex-col items-center w-7/12 mt-auto mb-auto text-center mr-10">
+      <h1 class="relative text-6xl mb-8">About Us</h1>
+      <p class="relative text-xl">Hippo Hack is hosted by Enginuity Tech! Not everyone has an equal opportunity to fully learn and appreciate the world of STEAM. At Enginuity Tech, we offer students free STEAM classes as well as organize local computing competitions in the Massachusetts area for all students of any programming expertise. Discover more about us at <a class="text-sky-500" href="">our website</a>!</p>
+    </div>
+    <div class="flex flex-row justify-start items-center max-w-fill mt-auto mb-auto">
+      <img class="h-64" src="./images/lightbulb.png">
+    </div>
+  </div>
+  <!--footer-->
+  <div class="relative mt-64 h-48 bg-gray-200"></div>
+</div>
+</body>
 </html>
