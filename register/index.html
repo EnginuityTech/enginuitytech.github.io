@@ -13,10 +13,10 @@
     }
   </script>
 </head>
-<body>
+<body onscroll="(function(){if(window.scrollY>10)document.getElementById('navbar').style.backgroundColor='rgba(0,0,0,1)'; else if (window.scrollY<10)document.getElementById('navbar').style.backgroundColor='rgba(0,0,0,0.5)'})()">
   <!--navbar-->
-  <nav class="flex items-center justify-between flex-wrap bg-blue-800 p-2" style="font-family: 'Merriweather';">
-    <div class="logoClick flex items-center flex-shrink-0 text-white mr-6" onclick="(function(){window.location=window.location.origin})()">
+  <nav id="navbar" class="z-50 flex items-center justify-between flex-wrap p-2 w-screen fixed pr-4" style="font-family: 'Merriweather';transition: background-color 200ms linear; background-color:rgba(0,0,0,0.5)">
+    <div class="flex items-center flex-shrink-0 text-white mr-6" onclick="(function(){window.location=window.location.origin})()">
       <img class="h-8 mr-2" id="logo" src="./logo.png">
       <button class="text-xl tracking-tight">Hippo Hack</span>
     </div>
@@ -30,6 +30,7 @@
       <button onclick="(function(){window.location=window.location.origin+'/register'})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Register</b></button>
     </div>
   </nav>
+  
   <!--header-->
   <div class="relative -z-10 py-32 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center" style="height:65vh;background-image:url('./registerBg.jpg');">
     <div class="z-10 relative py-5 max-w-lg mx-auto rounded-2xl shadow-2xl text-center text-white bg-white">
@@ -38,5 +39,20 @@
       </div>
     </div>
   </div>
+  <div class="relative flex flex-col justify-center items-center" style="height:30vh;font-family: 'Merriweather';">
+    <p class="text-xl mt-4">Location: <u>Reuben Hoar Public Library, Littleton MA 01460</u></p>
+    <p class="text-xl mt-2">Date & Time: <u>Monday, August 28th from 9:00am-8:30pm</u></p>
+    <p class="text-lg mt-8">Questions? Email us at <a class="text-sky-500" href="mailto:enginuitytech@gmail.com"><u>enginuitytech@gmail.com</u></a></p>
+  </div>
+
+  <!--check background colors... also do that for all other pages-->
+
+  <div class="relative flex flex-col items-center bg-sky-700" style="height:130vh;font-family: 'Merriweather';">
+    <p class="text-4xl mt-10 text-white">We thank you for signing up for Hippo Hack!!</p>
+    <!-- google form, once the mlh thing is done replace this with that link and also tell participants to go to that mlh site if they actaully want to sign up and participate -->
+    <iframe class="mt-8" src="https://docs.google.com/forms/d/e/1FAIpQLSde_aWKBHfcUE-RYqKa_OxeLfyC_jTSUx-mrU8usl6bzPD88Q/viewform?embedded=true" width="600" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+  <!--footer-->
+  <div class="relative mt-64 h-48 bg-gray-200"></div>
 </body>
 </html>

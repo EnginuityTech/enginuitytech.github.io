@@ -13,10 +13,10 @@
     }
   </script>
 </head>
-<body>
+<body onscroll="(function(){if(window.scrollY>10)document.getElementById('navbar').style.backgroundColor='rgba(0,0,0,1)'; else if (window.scrollY<10)document.getElementById('navbar').style.backgroundColor='rgba(0,0,0,0.5)'})()">
   <!--navbar-->
-  <nav class="flex items-center justify-between flex-wrap bg-blue-800 p-2" style="font-family: 'Merriweather';">
-    <div class="logoClick flex items-center flex-shrink-0 text-white mr-6" onclick="(function(){window.location=window.location.origin})()">
+  <nav id="navbar" class="z-50 flex items-center justify-between flex-wrap p-2 w-screen fixed pr-4" style="font-family: 'Merriweather';transition: background-color 200ms linear; background-color:rgba(0,0,0,0.5)">
+    <div class="flex items-center flex-shrink-0 text-white mr-6" onclick="(function(){window.location=window.location.origin})()">
       <img class="h-8 mr-2" id="logo" src="./logo.png">
       <button class="text-xl tracking-tight">Hippo Hack</span>
     </div>
@@ -30,6 +30,7 @@
       <button onclick="(function(){window.location=window.location.origin+'/register'})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Register</b></button>
     </div>
   </nav>
+
 <div class="absolute -z-10 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center" style="height:120vh; background-image:url('./images/banner.jpg')">
   <!--header-->
   <div class="relative full-column max-w-full mx-auto py-60 bg-center bg-cover bg-scroll text-center"> <!--bg-gradient-to-tr from-blue-900 to-sky-700-->
@@ -73,7 +74,7 @@
     </div>
     <div class="flex flex-col w-1/2 mt-auto mb-auto text-left ml-8">
       <h1 class="w-full text-white text-8xl mb-8"><b><u>The What</u></b></h1>
-      <p class="w-10/12 text-white text-xl">Hippo Hack is a 12 hour hackathon held in July where programmers of all experience levels across the Greater Boston area will congregate for a day full of collaboration, teamwork and fun!
+      <p class="w-10/12 text-white text-xl">Hippo Hack is a 12 hour hackathon held in July where students of all experience levels across the Greater Boston area will congregate for a day full of collaboration, teamwork and fun! Hippo Hack is a completely free hackathon for students in grades 6-12!!
       </p>
     </div>
   </div>
@@ -81,7 +82,7 @@
   <div class="relative z-0 h-2/3 pb-32 flex flex-row justify-center items-center" style="background-color:#095972;font-family: 'Merriweather';">
     <div class="flex flex-col items-end w-1/2 mt-auto mb-auto text-right mr-8">
       <h1 class="w-full text-white text-8xl mb-8"><b><u>The How</u></b></h1>
-      <p class="w-10/12 text-white text-xl">Teams will choose a theme from a pre- determined list of themes/topics, and by the end of the hacking time, the judging phase will begin and winners will be determined. Prizes will not only be awarded for the best overall projects, but also to beginners that display remarkable progress.
+      <p class="w-10/12 text-white text-xl">Teams will create a project from our list of topics based off of Henry's needs, and by the end of the hacking time, the judging phase will begin and winners will be chosen by judges as well as you guys! We will offer prizes in addition to other free merchandise!
       </p>
     </div>
     <div class="flex flex-row justify-start items-center w-1/2 mt-auto mb-auto">
@@ -103,7 +104,7 @@
     <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
     <div class="relative z-10 w-2/3">
       <h1 class="relative text-left text-2xl pb-4">I have ZERO programming experience. Should I come?</h1>
-      <p class="relative text-left text-md">OF COURSE! In fact, judging criteria will consider experience for those who don't have a leg up. We will run a number of introductory classes during the day if you are just starting out!</p>
+      <p class="relative text-left text-md">OF COURSE! We will run a number of introductory classes during the day if you are just starting out! There are plenty of projects you can make utilizing you and your group's skills to the fullest potential (and they don't have to be programming related!)</p>
     </div>
     <!--right question-->
     <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
