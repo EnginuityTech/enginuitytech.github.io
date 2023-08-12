@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <script>
+    tailwind.config = {
+      theme: {
+        
+      }
+    }
+  </script>
+</head>
+<body>
+  <!--navbar-->
+  <nav class="flex items-center justify-between flex-wrap bg-blue-800 p-2" style="font-family: 'Merriweather';">
+    <div class="logoClick flex items-center flex-shrink-0 text-white mr-6" onclick="(function(){window.location=window.location.origin})()">
+      <img class="h-8 mr-2" id="logo" src="./logo.png">
+      <button class="text-xl tracking-tight">Hippo Hack</span>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-gray-300 border-gray-300 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:justify-end lg:w-auto text-sm">
+      <button onclick="(function(){window.location=window.location.origin})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Home</b></button>
+      <button onclick="(function(){window.location=window.location.origin+'/register'})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Register</b></button>
+    </div>
+  </nav>
+  <!--header-->
+  <div class="relative -z-10 py-32 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center" style="height:65vh;background-image:url('./registerBg.jpg');">
+    <div class="z-10 relative py-5 max-w-lg mx-auto rounded-2xl shadow-2xl text-center text-white bg-white">
+      <div class="bg-clip-text py-3 text-transparent bg-gradient-to-r h-full from-blue-300 to-sky-400">
+        <p class="font-bold text-7xl">Registration</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
