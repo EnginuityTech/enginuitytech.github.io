@@ -13,6 +13,11 @@
       }
     }
   </script>
+  <style>
+    html{
+      scroll-behavior:smooth;
+    }
+  </style>
 </head>
 <body onscroll="(function(){if(window.scrollY>10)document.getElementById('navbar').style.backgroundColor='rgba(0,0,0,1)'; else if (window.scrollY<10)document.getElementById('navbar').style.backgroundColor='rgba(0,0,0,0.5)'})()">
   <!--navbar-->
@@ -28,12 +33,13 @@
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:justify-end lg:w-auto text-sm">
       <button onclick="(function(){window.location=window.location.origin})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Home</b></button>
-      <button onclick="(function(){window.location=window.location.origin+'/register'})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Register</b></button>
+      <button onclick="(function(){window.location='#sponsors';})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Sponsors</b></button>
+      <button onclick="(function(){window.location=window.location.origin+'/register';})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Register</b></button>
     </div>
   </nav>
 
-<div class="absolute -z-10 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center" style="height:120vh; background-image:url('./images/banner.jpg')">
   <!--header-->
+  <div class="absolute -z-10 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center" style="height:120vh; background-image:url('./images/banner.jpg')">
   <div class="relative full-column max-w-full mx-auto py-60 bg-center bg-cover bg-scroll text-center"> <!--bg-gradient-to-tr from-blue-900 to-sky-700-->
     <div class="z-10 relative py-10 max-w-2xl mx-auto rounded-2xl shadow-2xl text-center text-white bg-white"> <!--bg-gradient-to-br from-purple-500 to-pink-500-->
       <div class="bg-clip-text py-6 text-transparent bg-gradient-to-r h-full from-pink-500 to-violet-500">
@@ -45,12 +51,14 @@
       A 12-hour hackathon on <b>Monday, August 28th</b><br> at the <b>Reuben Hoar Public Library</b> in <u>Littleton, MA</u>
     </div>
   </div>
+
   <!--body p1-->
   <div class="relative z-0 bg-gradient-to-br from-blue-700 to-sky-500" style="height:120vh;font-family: 'Merriweather';">
     <h1 class="relative pt-64 text-center text-6xl text-white">What exactly is a <b><u>Hackathon</u></b>?</h1>
     <p class="relative pt-4 w-5/6 text-right text-white text-sm">Don't worry, we are not actually hacking in the sense of the word "hacking!"</p>
-    <p class="relative text-xl text-white text-center pt-10 w-2/3 max-w-full mx-auto">A hackathon is a place for creators to form a team and work on a project relating to computer science and other fields of STEAM. These projects will be shared with everyone and we will all have an opportunity to appreciate the hard work and creativity put into these amazing projects.</p>
+    <p class="relative text-xl text-white text-center pt-10 w-2/3 max-w-full mx-auto">A hackathon is a place for creators to come together and work on a project relating to computer science and other fields of STEAM. These projects will be shared with everyone and we will all have an opportunity to appreciate the hard work and creativity put into these amazing projects.</p>
   </div>
+
   <!--story-->
   <div class="relative z-0" style="height:140vh;">
     <!--first panel-->
@@ -79,11 +87,12 @@
       </p>
     </div>
   </div>
+
   <!--the how-->
   <div class="relative z-0 h-2/3 pb-32 flex flex-row justify-center items-center bg-sky-700" style="font-family: 'Merriweather';">
     <div class="flex flex-col items-end w-1/2 mt-auto mb-auto text-right mr-8">
       <h1 class="w-full text-white text-8xl mb-8"><b><u>The How</u></b></h1>
-      <p class="w-10/12 text-white text-xl">Teams will create a project from our list of topics based off of Henry's needs, and by the end of the hacking time, the judging phase will begin and winners will be chosen by judges as well as you guys! We will offer prizes in addition to other free merchandise!
+      <p class="w-10/12 text-white text-xl">Competitors will create a project from our list of topics based off of Henry's needs, and by the end of the hacking time, the judging phase will begin and winners will be chosen by judges as well as you guys! We will offer prizes in addition to other free merchandise!
       </p>
     </div>
     <div class="flex flex-row justify-start items-center w-1/2 mt-auto mb-auto">
@@ -98,6 +107,65 @@
     <p class="text-3xl mt-1">Monday, August 28th  |  9:00am - 8:30 PM</p>
   </div>
 
+  <!--gcalendar gmap embeds-->
+  <div class="relative h-screen flex flex-row justify-center items-center bg-sky-700 text-white" style="font-family: 'Merriweather';">
+    <div class="relative flex flex-col justify-center items-center">
+      <h1 class="relative text-center text-6xl mb-8">Calendar of events</h1>
+      <!--embed cal-->
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showPrint=0&showTabs=0&showCalendars=0&showTz=1&mode=AGENDA&src=MTM0OGNkYTRjNDNlOWQyMTIzMGQ0YWY3OWI3MDhhZDVlODkxZjEwODA1Mjc5NjgxYzA2MDRkMjI1NDliYzRiMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB" style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+      <p class="text-lg mt-4">Add our calendar at <a class="text-sky-500" target="_blank" href="https://calendar.google.com/calendar/u/0?cid=MTM0OGNkYTRjNDNlOWQyMTIzMGQ0YWY3OWI3MDhhZDVlODkxZjEwODA1Mjc5NjgxYzA2MDRkMjI1NDliYzRiMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"><u>this link</u></a>!</p>
+    </div>
+    <div class="relative flex flex-col justify-center items-center">
+      <h1 class="relative text-center text-6xl mb-8">Location</h1>
+      <!--embed map-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.578402858767!2d-71.48361982429768!3d42.54300972352426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e395d6636ed17b%3A0x774ba1db0744a64!2sReuben%20Hoar%20Public%20Library!5e0!3m2!1sen!2sus!4v1691781638548!5m2!1sen!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p class="text-lg mt-4">Reuben Hoar Public Library - 35 Shattuck St, Littleton MA 01460</p>
+    </div>
+  </div>
+
+  <!-- sponsored segmenttttt -->
+  <div id="sponsors" class="relative flex flex-col items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:100vh;">
+    <div class="z-20 relative mt-10 py-5 px-8 rounded-2xl shadow-2xl text-center text-white bg-white">
+      <div class="bg-clip-text py-6 text-transparent bg-gradient-to-r h-full from-pink-500 to-violet-500">
+        <p class="font-bold text-7xl">Our Sponsors</p>
+      </div>
+    </div>
+    <div class="relative z-10 mt-16 py-4 px-4 text-5xl text-white rounded-xl bg-yellow-400" style="font-family:'Merriweather';box-shadow:0px 0px 66px 23px #DDE845;">
+      <p class="mb-4">Legendary</p>
+      <img onclick="(function(){window.open('https://www.invenomic.com', '_blank').focus();})()" class="hoverImg relative z-20 rounded-2xl" src="./images/invenomicBanner.jpg">
+    </div>
+    <div class="relative z-10 mt-12 py-4 px-4 text-3xl text-black rounded-xl bg-gray-200" style="font-family:'Merriweather';">
+      <p class="mb-4">Silver</p>
+      <img onclick="(function(){window.open('https://virtualinc.com', '_blank').focus();})()" class="hoverImg relative z-20 rounded-2xl" width="200" src="./images/virtualIncBanner_small.jpg">
+    </div>
+  </div>
+  <style>
+    .hoverImg:hover{
+      cursor:pointer
+    }
+  </style>
+  <script>
+    var sponsorsContainer = document.getElementById("sponsors")
+    var height=(sponsorsContainer.style.height.substring(0,sponsorsContainer.style.height.length-2)-5)/100*window.innerHeight;
+    var createSparkle = function(x,y){
+      var sp=document.createElement("div");
+      sp.style.position="absolute";
+      sp.style.left=x+"px";
+      sp.style.top=y+"px";
+      sp.style.width="15px";
+      sp.style.height="15px";
+      sp.style.boxShadow="0px 0px 15px 1px #F2FF00;";
+      sp.style.zIndex=0;
+      sponsorsContainer.appendChild(sp);
+      sp.append("✨");
+    }
+
+    for (var i=0;i<10;i++){
+      var randomX=Math.floor(Math.random()*window.innerWidth*0.7)+window.innerWidth*0.15;
+      var randomY=Math.floor(Math.random()*height*0.8)+height*0.1;
+      createSparkle(randomX,randomY);
+    }
+  </script>
   <!-- FAQ -->
   <div class="relative flex flex-col justify-start items-center h-auto" style="font-family: 'Merriweather';">
     <!--left question-->
@@ -105,7 +173,7 @@
     <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
     <div class="relative z-10 w-2/3">
       <h1 class="relative text-left text-2xl pb-4">I have ZERO programming experience. Should I come?</h1>
-      <p class="relative text-left text-md">OF COURSE! We will run a number of introductory classes during the day if you are just starting out! There are plenty of projects you can make utilizing you and your group's skills to the fullest potential (and they don't have to be programming related!)</p>
+      <p class="relative text-left text-md">OF COURSE! We will run a number of introductory classes during the day if you are just starting out! There are plenty of projects you can make utilizing your skills to the fullest potential (and its basis doesn't have to be tech related!)</p>
     </div>
     <!--right question-->
     <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
@@ -129,29 +197,14 @@
     <hr class="relative z-10 my-16 w-2/3" style="border: 2px #095972 solid;">
     <div class="relative z-10 w-2/3">
       <h1 class="relative text-left text-2xl pb-4">What age do I have to be in order to participate?</h1>
-      <p class="relative text-left text-md">Hippo Hack is for all grades 6-12!</p>
+      <p class="relative text-left text-md">Hippo Hack is for all students in grades 6-12!</p>
     </div>
     <!--some margin white space-->
     <div class="relative z-10 w-full py-8"></div>
   </div>
 
-  <!--gcalendar gmap embeds-->
-  <div class="relative h-screen flex flex-row justify-center items-center bg-sky-700 text-white" style="font-family: 'Merriweather';">
-    <div class="relative flex flex-col justify-center items-center">
-      <h1 class="relative text-center text-6xl mb-8">Calendar of events</h1>
-      <!--embed cal-->
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showPrint=0&showTabs=0&showCalendars=0&showTz=1&mode=AGENDA&src=MTM0OGNkYTRjNDNlOWQyMTIzMGQ0YWY3OWI3MDhhZDVlODkxZjEwODA1Mjc5NjgxYzA2MDRkMjI1NDliYzRiMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB" style="border-width:0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
-      <p class="text-lg mt-4">Add our calendar at <a class="text-sky-500" target="_blank" href="https://calendar.google.com/calendar/u/0?cid=MTM0OGNkYTRjNDNlOWQyMTIzMGQ0YWY3OWI3MDhhZDVlODkxZjEwODA1Mjc5NjgxYzA2MDRkMjI1NDliYzRiMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"><u>this link</u></a>!</p>
-    </div>
-    <div class="relative flex flex-col justify-center items-center">
-      <h1 class="relative text-center text-6xl mb-8">Location</h1>
-      <!--embed map-->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.578402858767!2d-71.48361982429768!3d42.54300972352426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e395d6636ed17b%3A0x774ba1db0744a64!2sReuben%20Hoar%20Public%20Library!5e0!3m2!1sen!2sus!4v1691781638548!5m2!1sen!2sus" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p class="text-lg mt-4">Reuben Hoar Public Library - 35 Shattuck St, Littleton MA 01460</p>
-    </div>
-  </div>
   <!--et about us-->
-  <div class="relative h-3/4 flex flex-row justify-center items-center" style="font-family: 'Merriweather';">
+  <div class="relative h-3/4 flex flex-row justify-center items-center bg-gray-100" style="font-family: 'Merriweather';">
     <div class="flex flex-col items-center w-7/12 mt-auto mb-auto text-center mr-10">
       <h1 class="relative text-6xl mb-8">About Us</h1>
       <p class="relative text-xl">Hippo Hack is hosted by Enginuity Tech! Not everyone has an equal opportunity to fully learn and appreciate the world of STEAM. At Enginuity Tech, we offer students free STEAM classes as well as organize local computing competitions in the Massachusetts area for all students of any programming expertise. Discover more about us at <a class="text-sky-500" target="_blank" href="https://enginuitytech.dev"><u>our website</u></a>!</p>
