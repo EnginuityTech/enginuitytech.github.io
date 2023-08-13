@@ -124,19 +124,20 @@
   </div>
 
   <!-- sponsored segmenttttt -->
-  <div id="sponsors" class="relative flex flex-col items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:100vh;">
+  <div id="sponsors" class="relative flex flex-col justify-center items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:100vh;">
+    <div class="absolute z-10 w-full" style="height:100vh" id="sparkles"></div>
     <div class="z-20 relative mt-10 py-5 px-8 rounded-2xl shadow-2xl text-center text-white bg-white">
       <div class="bg-clip-text py-6 text-transparent bg-gradient-to-r h-full from-pink-500 to-violet-500">
         <p class="font-bold text-7xl">Our Sponsors</p>
       </div>
     </div>
-    <div class="relative z-10 mt-16 py-4 px-4 text-5xl text-white rounded-xl bg-yellow-400" style="font-family:'Merriweather';box-shadow:0px 0px 66px 23px #DDE845;">
-      <p class="mb-4">Legendary</p>
-      <img onclick="(function(){window.open('https://www.invenomic.com', '_blank').focus();})()" class="hoverImg relative z-20 rounded-2xl" src="./images/invenomicBanner.jpg">
+    <div class="relative mt-16 py-4 px-4 text-5xl text-white rounded-xl bg-yellow-400" style="font-family:'Merriweather';box-shadow:0px 0px 66px 23px #DDE845;"> <!--#DDE845-->
+      <p class="mb-4"><u>Legendary</u></p>
+      <img onclick="(function(){window.open('https://www.invenomic.com', '_blank').focus();})()" class="hoverImg relative rounded-2xl z-20" style="border:3px black solid" src="./images/invenomicBanner.jpg">
     </div>
-    <div class="relative z-10 mt-12 py-4 px-4 text-3xl text-black rounded-xl bg-gray-200" style="font-family:'Merriweather';">
-      <p class="mb-4">Silver</p>
-      <img onclick="(function(){window.open('https://virtualinc.com', '_blank').focus();})()" class="hoverImg relative z-20 rounded-2xl" width="200" src="./images/virtualIncBanner_small.jpg">
+    <div class="relative mt-12 py-4 px-4 text-3xl text-black rounded-xl bg-gray-200" style="font-family:'Merriweather';">
+      <p class="mb-4"><u>Silver</u></p>
+      <img onclick="(function(){window.open('https://virtualinc.com', '_blank').focus();})()" class="hoverImg relative rounded-2xl z-20" style="border:3px black solid" width="200" src="./images/virtualIncBanner_small.jpg">
     </div>
   </div>
   <style>
@@ -145,26 +146,69 @@
     }
   </style>
   <script>
-    var sponsorsContainer = document.getElementById("sponsors")
+    var sponsorsContainer = document.getElementById("sparkles")
     var height=(sponsorsContainer.style.height.substring(0,sponsorsContainer.style.height.length-2)-5)/100*window.innerHeight;
+    var sparkles=[]
+    var total = 15;
     var createSparkle = function(x,y){
-      var sp=document.createElement("div");
+      var sp=document.createElement("img");
       sp.style.position="absolute";
       sp.style.left=x+"px";
       sp.style.top=y+"px";
-      sp.style.width="15px";
-      sp.style.height="15px";
-      sp.style.boxShadow="0px 0px 15px 1px #F2FF00;";
+      sp.style.boxShadow="0px 0px 22px 4px #F2FF00";
+      sp.style.backgroundColor="#f2ff007b"
+      //sp.style.opacity="0.5";
       sp.style.zIndex=0;
+      sp.width=25;
+      sp.className="rounded-2xl"
+      sp.src="./images/sparkle.png"
       sponsorsContainer.appendChild(sp);
       sp.append("✨");
+      //#F2FF00
+    }
+    var distance = function(x1,x2,y1,y2){
+      return Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2))
+    }
+    var checkSparkle = function(x,y){
+      for (var i=0;i<sparkles.length;i++){
+        var dist = distance(x,sparkles[i][0],y,sparkles[i][1])
+        if (dist<150){
+          console.log("failed")
+          console.log("x1 x2",x,sparkles[i][0])
+          console.log("y1 y2",y,sparkles[i][1])
+          return false;
+        }
+      }
+      var left = 0
+      for (var i=0;i<sparkles.length;i++){
+        if (sparkles[i][0]<window.innerWidth/2)left++;
+      }
+      if ((left<total/2 && x>window.innerWidth/2) || (left>total/2 && x<window.innerWidth/2)){ //if there are less elements on the left and the element is on the right or less elements on the right and element on the left,
+        return false;
+      }
+      return true;
     }
 
-    for (var i=0;i<10;i++){
-      var randomX=Math.floor(Math.random()*window.innerWidth*0.7)+window.innerWidth*0.15;
-      var randomY=Math.floor(Math.random()*height*0.8)+height*0.1;
-      createSparkle(randomX,randomY);
+    var lookAtTheStars = function(){
+      sparkles=[]
+      document.getElementById("sparkles").innerHTML=""
+      for (var i=0;i<total;i++){
+        var randomX=Math.floor(Math.random()*window.innerWidth*0.9);
+        var randomY=Math.floor(Math.random()*height);
+        while (!checkSparkle(randomX,randomY)){
+          randomX=Math.floor(Math.random()*window.innerWidth*0.9);
+          randomY=Math.floor(Math.random()*height)
+        }
+        sparkles.push([])
+        sparkles[sparkles.length-1][0]=randomX;
+        sparkles[sparkles.length-1][1]=randomY;
+        createSparkle(randomX,randomY);
+      }
     }
+    lookAtTheStars()
+    setInterval(function(){
+      lookAtTheStars()
+    },1500)
   </script>
   <!-- FAQ -->
   <div class="relative flex flex-col justify-start items-center h-auto" style="font-family: 'Merriweather';">
