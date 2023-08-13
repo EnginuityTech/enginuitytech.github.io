@@ -207,10 +207,13 @@
       }
     }
       if (window.innerWidth>1500)lookAtTheStars()
-      setInterval(function(){
+      var intv=setInterval(function(){
         if (window.innerWidth>1500)lookAtTheStars()
-        else document.getElementById("sparkles").innerHTML=""
-      },1500)
+        else {
+          document.getElementById("sparkles").innerHTML=""
+          clearInterval(intv);
+        }
+      },3000)
   </script>
   <!-- FAQ -->
   <div class="relative flex flex-col justify-start items-center h-auto" style="font-family: 'Merriweather';">
