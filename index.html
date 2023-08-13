@@ -76,6 +76,9 @@
       </div>
     </div>
   </div>
+
+  <!--event topics <div class="relative h-screen"></div>-->
+
   <!--the what-->
   <div class="relative z-0 h-2/3 pt-32 flex flex-row justify-center items-end bg-sky-700" style="font-family: 'Merriweather';">
     <div class="flex flex-row justify-end items-center w-1/2 mt-auto mb-auto">
@@ -203,10 +206,11 @@
         createSparkle(randomX,randomY);
       }
     }
-    lookAtTheStars()
-    setInterval(function(){
-      lookAtTheStars()
-    },1500)
+      if (window.innerWidth>1500)lookAtTheStars()
+      setInterval(function(){
+        if (window.innerWidth>1500)lookAtTheStars()
+        else document.getElementById("sparkles").innerHTML=""
+      },1500)
   </script>
   <!-- FAQ -->
   <div class="relative flex flex-col justify-start items-center h-auto" style="font-family: 'Merriweather';">
