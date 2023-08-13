@@ -55,7 +55,7 @@
   <!--body p1-->
   <div class="relative z-0 bg-gradient-to-br from-blue-700 to-sky-500" style="height:120vh;font-family: 'Merriweather';">
     <h1 class="relative pt-64 text-center text-6xl text-white">What exactly is a <b><u>Hackathon</u></b>?</h1>
-    <p class="relative pt-4 w-5/6 text-right text-white text-sm">Don't worry, we are not actually hacking in the sense of the word "hacking!"</p>
+    <p class="relative pt-4 w-5/6 text-right text-white sm:text-xs md:text-sm">Don't worry, we are not actually hacking in the sense of the word "hacking!"</p>
     <p class="relative text-xl text-white text-center pt-10 w-2/3 max-w-full mx-auto">A hackathon is a place for creators to come together and work on a project relating to computer science and other fields of STEAM. These projects will be shared with everyone and we will all have an opportunity to appreciate the hard work and creativity put into these amazing projects.</p>
   </div>
 
@@ -111,7 +111,7 @@
   </div>
 
   <!--gcalendar gmap embeds-->
-  <div class="relative h-screen flex flex-row justify-center items-center bg-sky-700 text-white" style="font-family: 'Merriweather';">
+  <div class="relative lg:h-screen sm:hidden lg:flex flex-row justify-center items-center bg-sky-700 text-white invisible lg:visible" style="font-family: 'Merriweather';">
     <div class="relative flex flex-col justify-center items-center">
       <h1 class="relative text-center text-6xl mb-8">Calendar of events</h1>
       <!--embed cal-->
@@ -127,8 +127,8 @@
   </div>
 
   <!-- sponsored segmenttttt -->
-  <div id="sponsors" class="relative flex flex-col justify-center items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:100vh;">
-    <div class="absolute z-10 w-full" style="height:100vh" id="sparkles"></div>
+  <div id="sponsors" class="relative flex flex-col justify-center items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:800px">
+    <div class="absolute z-10 w-full" style="height:800px" id="sparkles"></div>
     <div class="z-20 relative mt-10 py-5 px-8 rounded-2xl shadow-2xl text-center text-white bg-white">
       <div class="bg-clip-text py-6 text-transparent bg-gradient-to-r h-full from-pink-500 to-violet-500">
         <p class="font-bold text-7xl">Our Sponsors</p>
@@ -150,7 +150,7 @@
   </style>
   <script>
     var sponsorsContainer = document.getElementById("sparkles")
-    var height=(sponsorsContainer.style.height.substring(0,sponsorsContainer.style.height.length-2)-5)/100*window.innerHeight;
+    var height=(sponsorsContainer.style.height.substring(0,sponsorsContainer.style.height.length-2)-5);
     var sparkles=[]
     var total = 15;
     var createSparkle = function(x,y){
