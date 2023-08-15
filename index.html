@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <link rel="icon" type="image/x-icon" href="./logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
@@ -11,7 +11,7 @@
       theme: {
         screens: {
           sm: '0px',
-          md: '500px',
+          md: '700px',
           lg: '1200px',
           xl: '1600px'
         }
@@ -91,7 +91,7 @@
   <div class="relative z-0 bg-gradient-to-br from-blue-700 to-sky-500" style="height:120vh;font-family: 'Merriweather';">
     <h1 class="relative pt-64 text-center sm:text-4xl md:text-6xl text-white">What exactly is a <b><u>Hackathon</u></b>?</h1>
     <p id="hackingNote" class="relative pt-4 w-5/6 text-right text-white text-sm">Don't worry, we are not actually hacking in the sense of the word "hacking!"</p>
-    <p class="relative text-xl text-white text-center pt-10 w-2/3 max-w-full mx-auto">A hackathon is a place for creators to come together and work on a project relating to computer science and other fields of STEAM. These projects will be shared with everyone and we will all have an opportunity to appreciate the hard work and creativity put into these amazing projects.</p>
+    <p class="relative sm:text-md md:text-xl text-white text-center pt-10 w-2/3 max-w-full mx-auto">A hackathon is a place for creators to come together and work on a project relating to computer science and other fields of STEAM. These projects will be shared with everyone and we will all have an opportunity to appreciate the hard work and creativity put into these amazing projects.</p>
   </div>
 
   <!--story-->
@@ -100,28 +100,36 @@
     <div class="relative z-10 w-full h-1/2 bg-cover sm:bg-left md:bg-center" style="background-image:url('./images/sad-hippo.jpg')">
       <div class="absolute z-20 w-full h-full bg-center bg-gradient-to-r from-transparent to-black opacity-80 to-80%"></div>
       <div class="flex flex-col justify-center relative z-30 w-1/2 h-full left-1/2 items-center text-white my-auto">
-        <p class="w-7/12 text-center rounded-lg text-lg"><b>Henry the hippo needs your help! He was last seen sobbing as he trudged away from his former habitat (destroyed by humans ofc).</b></p>
+        <p class="w-7/12 text-center rounded-lg sm:text-sm md:text-lg"><b>Henry the hippo needs your help! He was last seen sobbing as he trudged away from his former habitat (destroyed by humans ofc).</b></p>
       </div>
     </div>
     <!--second panel-->
     <div class="relative z-10 w-full h-1/2 bg-cover bg-center" style="background-image:url('./images/henrychris.jpg');">
       <div class="absolute z-20 w-full h-full bg-center bg-gradient-to-l from-transparent to-black opacity-80 to-80%"></div>
       <div class="flex flex-col justify-center relative z-30 w-1/2 h-full items-center text-white my-auto">
-        <p class="w-7/12 text-center rounded-lg text-lg"><b>After talking to Chris the crocodile, he has come to the revelation that he needs you (yes, you!) to help him accomplish his aspirations and better him and his species!</b></p>
+        <p class="w-7/12 text-center rounded-lg sm:text-sm md:text-lg"><b>After talking to Chris the crocodile, he has come to the revelation that he needs you (yes, you!) to help him accomplish his aspirations and better him and his species!</b></p>
       </div>
     </div>
   </div>
 
   <!--event topics <div class="relative h-screen"></div>-->
+  <div class="relative flex flex-col justify-center items-center bg-gradient-to-bl from-blue-800 to-sky-600" style="height:500px">
+    <div class="z-10 relative sm:py-3 md:py-7 md:max-w-2xl sm:px-5 md:mx-auto rounded-2xl shadow-2xl text-center text-white bg-gradient-to-tr from-blue-500 to-sky-300">
+      <p class="font-bold sm:text-5xl md:text-7xl text-white">Event Topics</p>
+    </div>
+    <div class="relative mt-16 py-4 px-4 text-3xl text-white">
+      Coming soon!
+    </div>
+  </div>
 
   <!--the what-->
   <div class="relative z-0 h-2/3 pt-32 flex flex-row md:justify-center md:items-end bg-sky-700" style="font-family: 'Merriweather';">
     <div class="sm:hidden md:flex flex-row justify-end items-center md:w-1/2 mt-auto mb-auto">
       <img src="./images/img1.png">
     </div>
-    <div class="flex flex-col sm:items-center sm:w-full md:w-1/2 mt-auto mb-auto text-left md:ml-8">
-      <h1 class="w-full text-white sm:text-5xl sm:text-center md:text-8xl mb-8"><b><u>The What</u></b></h1>
-      <p class="w-10/12 text-white sm:text-md sm:text-center md:text-xl">Hippo Hack is a 12 hour hackathon where students of all experience levels across the Greater Boston area will congregate for a day full of collaboration, teamwork and fun! Hippo Hack is a completely free hackathon for students in grades 6-12!!
+    <div class="flex flex-col sm:items-center md:items-start sm:w-full md:w-1/2 mt-auto mb-auto text-left md:ml-8">
+      <h1 class="w-10/12 text-white sm:text-5xl sm:text-center md:text-right md:text-8xl mb-8"><b><u>The What</u></b></h1>
+      <p class="w-10/12 text-white sm:text-md sm:text-center md:text-right md:text-xl">Hippo Hack is a 12 hour hackathon where students of all experience levels across the Greater Boston area will congregate for a day full of collaboration, teamwork and fun! Hippo Hack is a completely free hackathon for students in grades 6-12!!
       </p>
     </div>
   </div>
@@ -129,8 +137,8 @@
   <!--the how-->
   <div class="relative z-0 h-2/3 pb-32 flex flex-row justify-center items-center bg-sky-700" style="font-family: 'Merriweather';">
     <div class="flex flex-col sm:items-center md:items-end sm:w-full md:w-1/2 mt-auto mb-auto text-right md:mr-8">
-      <h1 class="w-full text-white sm:text-5xl sm:text-center md:text-8xl mb-8"><b><u>The How</u></b></h1>
-      <p class="w-10/12 text-white sm:text-md sm:text-center md:text-xl">Competitors will create a project from our list of topics based off of Henry's needs, and by the end of the hacking time, the judging phase will begin and winners will be chosen by judges as well as you guys! We will offer prizes in addition to other free merchandise!
+      <h1 class="w-10/12 text-white sm:text-5xl sm:text-center md:text-left md:text-8xl mb-8"><b><u>The How</u></b></h1>
+      <p class="w-10/12 text-white sm:text-md sm:text-center md:text-left md:text-xl">Competitors will create a project from our list of topics based off of Henry's needs, and by the end of the hacking time, the judging phase will begin and winners will be chosen by judges as well as you guys! We will offer prizes in addition to other free merchandise!
       </p>
     </div>
     <div class="sm:hidden md:flex flex-row justify-start items-center w-1/2 mt-auto mb-auto">
@@ -140,7 +148,7 @@
 
   <!-- register -->
   <div class="relative h-screen -z-10 full-column max-w-full mx-auto w-screen bg-center bg-cover bg-fixed text-center flex flex-col justify-center items-center text-white" style="background-image:url('./images/epochNewDelhi1.jpg');font-family: 'Merriweather';">
-    <h1 class="sm:text-4xl md:text-8xl">Register <a class="text-sky-500" href="./register"><u>here</u></a>!!!</h1>
+    <h1 class="sm:text-5xl md:text-8xl">Register <a class="text-sky-500" href="./register"><u>here</u></a>!!!</h1>
     <p class="sm:text-sm md:text-3xl mt-4">Reuben Hoar Public Library, Littleton MA</p>
     <p class="sm:text-sm mt-1">Monday, August 28th  |  9:00am - 8:30 PM</p>
   </div>
@@ -164,7 +172,7 @@
   <!-- sponsored segmenttttt -->
   <div id="sponsors" class="relative flex flex-col justify-center items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:800px">
     <div class="absolute z-10 w-full" style="height:800px" id="sparkles"></div>
-    <div class="z-10 relative md:py-10 md:max-w-2xl sm:px-5 md:mx-auto rounded-2xl shadow-2xl text-center text-white bg-white">
+    <div class="z-10 relative md:py-5 md:max-w-2xl sm:px-5 md:mx-auto rounded-2xl shadow-2xl text-center text-white bg-white">
       <div class="bg-clip-text py-6 text-transparent bg-gradient-to-r h-full from-pink-500 to-violet-500">
         <p class="font-bold sm:text-5xl md:text-7xl">Our Sponsors</p>
       </div>
