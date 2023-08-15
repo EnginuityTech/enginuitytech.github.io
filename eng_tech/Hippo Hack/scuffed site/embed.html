@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="one" class="sect">
+<p id="left" class="animateView">yoooooooo this is the <br> best par ever </p>
+</div>
+<div id="two" class="sect">
+<div id="column"></div>
+</div>
+<div id="three" class="sect">
+<p id="right" class="animateView">yoooooooo this is the <br> best par ever</p>
+</div>
+<style>
+.sect{
+	border:1px solid black;
+    position:absolute;
+    width:33%;
+    height:100%;
+}
+#left{
+	border:1px solid black;
+    position:relative;
+    left:0;
+    transition: left 1s;
+    z-index:0;
+}
+#left:is-inViewport{
+	left:-20px;
+}
+#right{
+	border:1px solid black;
+    position:relative;
+    left:-100px;
+    transition: left 1s;
+    z-index:0;
+}
+#right:is-inViewport{
+	left:20px;
+}
+#one{
+	left:0;
+    z-index:0;
+    height:200%;
+}
+#two{
+	left:33%;
+    z-index:1;
+    background-color:white;
+}
+#three{
+	left:66%;
+    z-index:0;
+}
+</style>
+<script>
+  const inViewport = (entries, observer) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    });
+  };
+const Obs = new IntersectionObserver(inViewport);
+      const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+      // Attach observer to every [data-inviewport] element:
+      const ELs_inViewport = document.querySelectorAll(".animateView")
+      ELs_inViewport.forEach(EL => {
+        Obs.observe(EL, obsOptions);
+      });
+</script>
+</body>
+</html> 
+

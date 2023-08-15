@@ -1,0 +1,14 @@
+Professor Ozdaglar	asuman@mit.edu	the MIT EECS department
+Professor Arvind	arvind@mit.edu	the MIT EECS department
+Professor Torralba	torralba@mit.edu	the MIT EECS department
+Professor Voldman	voldman@mit.edu	the MIT EECS department
+Mr. Glick	ilyaglik@csail.mit.edu	the MIT CSAIL department
+Ms. Bella	isabell@mit.edu	the MIT EECS department
+Mr. DeLaughter	jessed@mit.edu	the MIT IDSS
+Ms. Dorson	ldorson@mit.edu	the MIT IDSS
+Ms. Adeniyi	tadeniyi@mit.edu	the MIT IDSS
+Ms. Lin	nlin1@mit.edu	the MIT Math department
+Ms. Turk	sturk@mit.edu	the MIT Math department
+Professor Goemans	goemans@math.mit.edu	the MIT Math department
+Professor Minicozzi	minicozz@math.mit.edu	the MIT Math department
+Professor Fitzgerald	dkfitz@mit.edu	MIT STS

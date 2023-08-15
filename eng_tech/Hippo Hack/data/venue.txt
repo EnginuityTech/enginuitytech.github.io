@@ -1,0 +1,23 @@
+Ms. Anderson	serrie@bu.edu	the Boston University CS Department
+Mr. Guciewicz	patjg@bu.edu	the Boston University CS Department
+Mr. Kavanagh	pkav@bu.edu	the Boston University CS Department
+Ms. Wu	twu0@bu.edu	the Boston University CS Department
+Redhat	hello-labs-boston@redhat.com	Redhat Newton
+Mr. Golitsyn	golitsyn@brandeis.edu	the Brandeis Michtom School of Computer Science
+Mr. Allison	chris@cs.brandeis.edu	the Brandeis Michtom School of Computer Science
+Mr. Robbins	arobbins@paytronix.com	Paytronix in Newton, MA
+Mr. Bernardi	bernardi@brandeis.edu	the Brandeis Mathematics Department
+Ms. Mulkeen	mulkeenm@bc.edu	the Boston College CS Department 
+Mr. Temples	temples@bc.edu	the Boston College CS Department 
+Boston College	math@bc.edu	the Boston College Mathematics Department 
+Mr. Khabari	khabaria@wit.edu	the WIT Engineering Department
+Ms. Wade	debbie.wade@umb.edu	the UMass Boston CS Department
+Ms. Abrams	abramse@wit.edu	WIT Computing & Data Science
+Ms. Augusto	augustoa@wit.edu	WIT Computing & Data Science
+Mr. Sun	Greg.Sun@umb.edu	UMass Boston Engineering
+Professor Hansen	hansenr2@wit.edu	WIT Computing & Data Science
+Mr. Lin	line1@wit.edu	WIT Computing & Data Science
+Ms. Suresh-Menon	sureshmenond@wit.edu	WIT Computing & Data Science
+Mr. Jackson	jacksonm@wit.edu	the WIT School of Enginnering
+Professor Khabari	khabaria@wit.edu	the WIT School of Enginnering
+Ms. Cusack	scusack@lesley.edu	the Lesley College STEAM Learning Lab

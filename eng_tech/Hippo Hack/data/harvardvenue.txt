@@ -1,0 +1,11 @@
+Professor Shieber	shieber@seas.harvard.edu
+Professor Chong	chong@seas.harvard.edu
+Mr. Hesterberg	ahesterberg@seas.harvard.edu
+Professor Loncar	loncar@seas.harvard.edu
+Ms. Mileski	jmileski@seas.harvard.edu
+Ms. Brenn	jbrenn@seas.harvard.edu
+Professor Koumoutsakos	petros@seas.harvard.edu
+Professor Pfister	pfister@seas.harvard.edu
+Mr. Protopapas	pavlos@seas.harvard.edu
+Professor Kozinsky	bkoz@seas.harvard.edu
+Ms. Chute	cathy_chute@harvard.edu
