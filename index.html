@@ -27,14 +27,21 @@
         //small
         gebi("hackingNote").style.fontSize="10px";
       }else if (700<=window.innerWidth && window.innerWidth<1200){
-        gebi("hackingNote").style.fontSize="15px";
         //med
+        gebi("hackingNote").style.fontSize="15px";
+        gebi("theWhatH1").style.width=gebi("theWhatImg").offsetWidth+"px";
+        gebi("theWhatP").style.width=gebi("theWhatImg").offsetWidth+"px";
+        gebi("theHowH1").style.width=gebi("theHowImg").offsetWidth+"px";
+        gebi("theHowP").style.width=gebi("theHowImg").offsetWidth+"px";
       }else{
-        gebi("hackingNote").style.fontSize="17px";
         //lg++
+        gebi("hackingNote").style.fontSize="17px";
+        gebi("theWhatH1").style.width=gebi("theWhatImg").offsetWidth+"px";
+        gebi("theWhatP").style.width=gebi("theWhatImg").offsetWidth+"px";
+        gebi("theHowH1").style.width=gebi("theHowImg").offsetWidth+"px";
+        gebi("theHowP").style.width=gebi("theHowImg").offsetWidth+"px";
       }
     }
-    resize()
     window.onresize=resize;
     window.onload=function(){
       if (window.innerWidth<700){
@@ -46,6 +53,7 @@
           navMenuShown=!navMenuShown;
         })
       }
+      resize();
     }
   </script>
   <style>
@@ -61,15 +69,15 @@
       <img class="h-8 mr-2" id="logo" src="./logo.png">
       <button class="text-xl tracking-tight">Hippo Hack</span>
     </div>
-    <div class="block lg:hidden">
+    <div class="block md:hidden">
       <button id="menuToggle" class="flex items-center px-3 py-2 border rounded text-gray-300 border-gray-300 hover:text-white hover:border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
-    <div id="navItemContainer" class="w-full block flex-grow lg:flex lg:items-center lg:justify-end lg:w-auto text-sm">
-      <button onclick="(function(){window.location=window.location.origin})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Home</b></button>
-      <button onclick="(function(){window.location='#sponsors';})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Sponsors</b></button>
-      <button onclick="(function(){window.location=window.location.origin+'/register';})()" class="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4"><b>Register</b></button>
+    <div id="navItemContainer" class="w-full block flex-grow md:flex md:items-center md:justify-end md:w-auto text-sm">
+      <button onclick="(function(){window.location=window.location.origin})()" class="block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-white mr-4"><b>Home</b></button>
+      <button onclick="(function(){window.location='#sponsors';})()" class="block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-white mr-4"><b>Sponsors</b></button>
+      <button onclick="(function(){window.location=window.location.origin+'/register';})()" class="block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-white mr-4"><b>Register</b></button>
     </div>
   </nav>
 
@@ -88,8 +96,8 @@
   </div>
 
   <!--body p1-->
-  <div class="relative z-0 bg-gradient-to-br from-blue-700 to-sky-500" style="height:120vh;font-family: 'Merriweather';">
-    <h1 class="relative pt-64 text-center sm:text-4xl md:text-6xl text-white">What exactly is a <b><u>Hackathon</u></b>?</h1>
+  <div class="relative flex flex-col justify-center items-center z-0 bg-gradient-to-br from-blue-700 to-sky-500" style="height:900px;font-family: 'Merriweather';">
+    <h1 class="relative text-center sm:text-4xl md:text-6xl text-white">What exactly is a <b><u>Hackathon</u></b>?</h1>
     <p id="hackingNote" class="relative pt-4 w-5/6 text-right text-white text-sm">Don't worry, we are not actually hacking in the sense of the word "hacking!"</p>
     <p class="relative sm:text-md md:text-xl text-white text-center pt-10 w-2/3 max-w-full mx-auto">A hackathon is a place for creators to come together and work on a project relating to computer science and other fields of STEAM. These projects will be shared with everyone and we will all have an opportunity to appreciate the hard work and creativity put into these amazing projects.</p>
   </div>
@@ -97,17 +105,17 @@
   <!--story-->
   <div class="relative z-0" style="height:140vh;">
     <!--first panel-->
-    <div class="relative z-10 w-full h-1/2 bg-cover sm:bg-left md:bg-center" style="background-image:url('./images/sad-hippo.jpg')">
+    <div class="relative z-10 w-full h-1/2 bg-cover sm:bg-left md:bg-center" style="background-image:url('./images/story1.png')">
       <div class="absolute z-20 w-full h-full bg-center bg-gradient-to-r from-transparent to-black opacity-80 to-80%"></div>
       <div class="flex flex-col justify-center relative z-30 w-1/2 h-full left-1/2 items-center text-white my-auto">
-        <p class="w-7/12 text-center rounded-lg sm:text-sm md:text-lg"><b>Henry the hippo needs your help! He was last seen sobbing as he trudged away from his former habitat (destroyed by humans ofc).</b></p>
+        <p class="w-7/12 text-center rounded-lg sm:text-sm md:text-xl"><b>Henry the hippo needs your help! He was last seen sobbing as he trudged away from his former habitat (destroyed by humans ofc).</b></p>
       </div>
     </div>
     <!--second panel-->
-    <div class="relative z-10 w-full h-1/2 bg-cover bg-center" style="background-image:url('./images/henrychris.jpg');">
+    <div class="relative z-10 w-full h-1/2 bg-cover bg-bottom" style="background-image:url('./images/story2.png');">
       <div class="absolute z-20 w-full h-full bg-center bg-gradient-to-l from-transparent to-black opacity-80 to-80%"></div>
       <div class="flex flex-col justify-center relative z-30 w-1/2 h-full items-center text-white my-auto">
-        <p class="w-7/12 text-center rounded-lg sm:text-sm md:text-lg"><b>After talking to Chris the crocodile, he has come to the revelation that he needs you (yes, you!) to help him accomplish his aspirations and better him and his species!</b></p>
+        <p class="w-7/12 text-center rounded-lg sm:text-sm md:text-xl"><b>After talking to Chris the crocodile, he has come to the revelation that he needs you (yes, you!) to help him accomplish his aspirations and better him and his species!</b></p>
       </div>
     </div>
   </div>
@@ -123,26 +131,26 @@
   </div>
 
   <!--the what-->
-  <div class="relative z-0 h-2/3 pt-32 flex flex-row md:justify-center md:items-end bg-sky-700" style="font-family: 'Merriweather';">
+  <div class="relative z-0 pt-32 flex flex-row md:justify-center md:items-end bg-sky-700" style="height:600px;font-family: 'Merriweather';">
     <div class="sm:hidden md:flex flex-row justify-end items-center md:w-1/2 mt-auto mb-auto">
-      <img src="./images/img1.png">
+      <img id="theWhatImg" src="./images/img1.png">
     </div>
-    <div class="flex flex-col sm:items-center md:items-start sm:w-full md:w-1/2 mt-auto mb-auto text-left md:ml-8">
-      <h1 class="w-10/12 text-white sm:text-5xl sm:text-center md:text-right md:text-8xl mb-8"><b><u>The What</u></b></h1>
-      <p class="w-10/12 text-white sm:text-md sm:text-center md:text-right md:text-xl">Hippo Hack is a 12 hour hackathon where students of all experience levels across the Greater Boston area will congregate for a day full of collaboration, teamwork and fun! Hippo Hack is a completely free hackathon for students in grades 6-12!!
+    <div class="flex flex-col sm:items-center md:items-start sm:w-full md:w-1/2 mt-auto mb-auto text-left md:ml-9">
+      <h1 id="theWhatH1" class="sm:w-10/12 text-white sm:text-5xl sm:text-center md:text-right md:text-8xl mb-8"><b><u>The What</u></b></h1>
+      <p id="theWhatP" class="sm:w-10/12 text-white sm:text-md md:text-md lg:text-xl sm:text-center md:text-right">Hippo Hack is a 12 hour hackathon where students of all experience levels across the Greater Boston area will congregate for a day full of collaboration, teamwork and fun! Hippo Hack is a completely free hackathon for students in grades 6-12!!
       </p>
     </div>
   </div>
 
   <!--the how-->
-  <div class="relative z-0 h-2/3 pb-32 flex flex-row justify-center items-center bg-sky-700" style="font-family: 'Merriweather';">
-    <div class="flex flex-col sm:items-center md:items-end sm:w-full md:w-1/2 mt-auto mb-auto text-right md:mr-8">
-      <h1 class="w-10/12 text-white sm:text-5xl sm:text-center md:text-left md:text-8xl mb-8"><b><u>The How</u></b></h1>
-      <p class="w-10/12 text-white sm:text-md sm:text-center md:text-left md:text-xl">Competitors will create a project from our list of topics based off of Henry's needs, and by the end of the hacking time, the judging phase will begin and winners will be chosen by judges as well as you guys! We will offer prizes in addition to other free merchandise!
+  <div class="relative z-0 h-2/3 pb-32 flex flex-row justify-center items-center bg-sky-700" style="height:600px;font-family: 'Merriweather';">
+    <div class="flex flex-col sm:items-center md:items-end sm:w-full md:w-1/2 mt-auto mb-auto text-right md:mr-9">
+      <h1 id="theHowH1" class="sm:w-10/12 text-white sm:text-5xl sm:text-center md:text-left md:text-8xl mb-8"><b><u>The How</u></b></h1>
+      <p id="theHowP" class="sm:w-10/12 text-white sm:text-md md:text-md lg:text-xl sm:text-center md:text-left">Competitors will create a project from our list of topics based off of Henry's needs, and by the end of the hacking time, the judging phase will begin and winners will be chosen by judges as well as you guys! We will offer prizes in addition to other free merchandise!
       </p>
     </div>
     <div class="sm:hidden md:flex flex-row justify-start items-center w-1/2 mt-auto mb-auto">
-      <img src="./images/img2.png">
+      <img id="theHowImg" src="./images/img2.png">
     </div>
   </div>
 
@@ -170,18 +178,23 @@
   </div>
 
   <!-- sponsored segmenttttt -->
-  <div id="sponsors" class="relative flex flex-col justify-center items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:1000px">
+  <div id="sponsors" class="relative flex flex-col justify-center items-center bg-gradient-to-tr from-rose-300 to-fuchsia-300 to-90%" style="height:1200px">
     <div class="absolute z-10 w-full" style="height:800px" id="sparkles"></div>
     <div class="z-10 relative md:py-5 md:max-w-2xl sm:px-5 md:mx-auto rounded-2xl shadow-2xl text-center text-white bg-white">
       <div class="bg-clip-text py-6 text-transparent bg-gradient-to-r h-full from-pink-500 to-violet-500">
         <p class="font-bold sm:text-5xl md:text-7xl">Our Sponsors</p>
       </div>
     </div>
-    <div class="relative mt-16 py-4 px-4 text-5xl text-white rounded-xl bg-yellow-400" style="font-family:'Merriweather';box-shadow:0px 0px 66px 23px #DDE845;"> <!--#DDE845-->
+    <div class="relative mt-16 py-4 px-4 text-6xl text-white rounded-xl bg-yellow-400" style="font-family:'Merriweather';box-shadow:0px 0px 66px 23px #DDE845;"> <!--#DDE845-->
       <p class="mb-4"><u>Legendary</u></p>
       <img onclick="(function(){window.open('https://www.invenomic.com', '_blank').focus();})()" class="hoverImg relative rounded-2xl z-20" style="border:3px black solid" src="./images/invenomicBanner.jpg">
     </div>
-    <div class="relative mt-12 py-4 px-12 text-4xl text-black rounded-xl bg-gray-200" style="font-family:'Merriweather';">
+    <div class="relative mt-16 py-4 px-12 text-4xl text-black rounded-xl" style="background-color:#e7b82c;font-family:'Merriweather';">
+      <p class="mb-4 mt-1"><u>Gold</u></p>
+      <img onclick="(function(){window.open('https://www.firstinspires.org/', '_blank').focus();})()" class="hoverImg relative rounded-2xl z-20" style="border:3px black solid" width="300" src="./images/firstrobotics-logo.jpg">
+      <img onclick="(function(){window.open('https://hackclub.com/bank/', '_blank').focus();})()" class="hoverImg relative rounded-2xl z-20 mt-3" width="300" src="./images/hcb-logo.png">
+    </div>
+    <div class="relative mt-9 py-4 px-12 text-4xl text-black rounded-xl bg-gray-200" style="font-family:'Merriweather';">
       <p class="mb-4"><u>Silver</u></p>
       <img onclick="(function(){window.open('https://virtualinc.com', '_blank').focus();})()" class="hoverImg relative rounded-2xl z-20" style="border:3px black solid" width="225" src="./images/virtualIncBanner_small.jpg">
     </div>

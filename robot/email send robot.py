@@ -74,8 +74,8 @@ if letter == "test":
     sys.exit()
 
 
-rawData=open("C:/Users/Michael Zhang/Desktop/Enginuity-Tech/Hippo Hack/data/"+letter+".txt","r", encoding="UTF-8").readlines()
-template=open("C:/Users/Michael Zhang/Desktop/Enginuity-Tech/Hippo Hack/templates/"+letter+".txt","r", encoding="UTF-8").readlines()
+rawData=open("C:/Users/Michael Zhang/Desktop/enginuitytech.github.io/robot/data/"+letter+".txt","r", encoding="UTF-8").readlines()
+template=open("C:/Users/Michael Zhang/Desktop/enginuitytech.github.io/robot/templates/"+letter+".txt","r", encoding="UTF-8").readlines()
 body=""
 
 recipientPos=int(template[0][:-1])
@@ -87,14 +87,24 @@ template.pop(0)
 template.pop(0)
 template="".join(template)
 
+
 for i in range(len(rawData)):
+    if rawData[i]=="#\n":
+        for j in range(i,len(rawData)):
+            del rawData[i] #index position changes on del, just using the Del key basically here
+        break
     if rawData[i][-1:]=="\n":
         rawData[i]=rawData[i][:-1]
     rawData[i]=rawData[i].split("\t")
-sender = "enginuitytech@gmail.com"
-password = "yeklvbfuwxaehvgk" #generated "App Password" from myaccount.google.com/apppasswords
+sender = "mzhang0213@gmail.com"
+password = "nyttoksinrsxpubl" #generated "App Password" from myaccount.google.com/apppasswords
 #michael's password is nyttoksinrsxpubl
 #enginuity's password is yeklvbfuwxaehvgk
+
+#confirm email msgs
+names=["C:/Users/Michael Zhang/Desktop/enginuitytech.github.io/Hippo Hack Flyer 2.pdf"]
+#file names of all attachments, on this drive
+#loaded rn: nothing
 
 
 #get date want to send
@@ -118,10 +128,6 @@ if finalConfirm=="N":
     sys.exit()
 
 
-#confirm email msgs
-names=["C:/Users/Michael Zhang/Desktop/Enginuity-Tech/Hippo Hack/Hippo Hack Prospectus.pdf"]
-#file names of all attachments, on this drive
-#loaded rn: 1 flyer
 
 print("reviewing messages, starting on following line:\n\n")
 for i in range(len(rawData)):
